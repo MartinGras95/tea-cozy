@@ -4,11 +4,17 @@ body{
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  margin: 0;
+  padding: 0;
 }
 
 a{
   color: seashell;
   text-decoration: underline;
+}
+
+h2,h4{
+  margin: 0;
 }
 
 /* Header Section */
@@ -21,6 +27,8 @@ a{
   border-bottom: 1px solid seashell;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
+  background-color: black;
 }
 
 /* Header logo */
@@ -37,4 +45,34 @@ a{
   justify-content: space-between;
   width: 350px;
   padding-right: 10px;
+}
+
+/* Whole content container */
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+/* Mission Section*/
+
+.mission-container{
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  background:url(../images/img-mission-background.jpg);
+}
+
+.mission-content{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-direction: column;
+  background-color: black;
+  height: 100px;
+  width: inherit;
+
 }
