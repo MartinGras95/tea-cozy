@@ -1,22 +1,21 @@
 /* Universal Styles */
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-color: black;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
-  margin: 0;
-  padding: 0;
 }
 
 a{
   color: seashell;
   text-decoration: underline;
-}
-
-h2,h4,h3,h5,p{
-  margin: 0;
 }
 
 /* Header Section */
@@ -121,11 +120,11 @@ h2,h4,h3,h5,p{
 .locations-container{
   display: flex;
   height: 500px;
-  width: 1200px;
+  width: inherit;
   align-items: center;
   justify-content: space-around;
   background:url(../images/img-locations-background.jpg);
-  background-size: cover;
+  width: 1200px;
 }
 
 .location{
@@ -147,8 +146,10 @@ h2,h4,h3,h5,p{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;;
-
+  margin-bottom: 50px;
 }
+
+/*Copyright Section*/
 
 .copyright{
   width: 100%;
